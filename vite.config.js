@@ -2,13 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/main.jsx",
   plugins: [react()],
-  resolve: {
-    alias: {
-      "@": "/src",
-    },
-  },
   server: {
     port: 5173,
   },
@@ -17,4 +11,5 @@ export default defineConfig({
       external: ["react-redux"],
     },
   },
+  base: "/client/",
 });
