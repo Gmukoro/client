@@ -13,7 +13,7 @@ const HomePage = () => {
     const fetchQuotes = async () => {
       try {
         const response = await fetch(
-          "https://api.quotable.io/quotes?tags=motivational&limit=5"
+          "https://api.quotable.io/quotes?tags=motivational&limit=10000"
         );
         const data = await response.json();
         const quotes = data.results.map((quote) => ({
