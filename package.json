@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-build": "npm install $NPM_FLAGS && npm run build"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.0",
