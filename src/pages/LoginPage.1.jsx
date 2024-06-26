@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { login } from "../redux/actions/authActions";
 import Header from "../components/header";
 
-const LoginPage = () => {
+export const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
@@ -90,5 +90,3 @@ const LoginPage = () => {
     </div>
   );
 };
-
-export default LoginPage;

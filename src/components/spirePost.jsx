@@ -9,13 +9,13 @@ import {
 } from "react-icons/fa";
 import Tooltip from "@mui/material/Tooltip";
 
-const SearchBar = () => {
+const SpirePost = () => {
   return (
     <div className="flex flex-col w-full max-w-xl p-4 bg-white shadow-md rounded-lg mb-4">
       <input
         type="text"
         placeholder="Inspire Me!"
-        className="w-full p-3 border border-gray-300 rounded-lg mb-2"
+        className="w-full p-3 border rounded-lg mb-2"
       />
       <div className="flex justify-between items-center">
         <div className="flex space-x-4 text-gray-500">
@@ -31,7 +31,7 @@ const SearchBar = () => {
           </Tooltip>
           <Tooltip title="Emoji" placement="bottom">
             <span>
-              <FaSmile size={20} style={{}} />
+              <FaSmile size={20} />
             </span>
           </Tooltip>
           <Tooltip title="Location" placement="bottom">
@@ -53,4 +53,4 @@ const SearchBar = () => {
   );
 };
 
-export default SearchBar;
+export default SpirePost;

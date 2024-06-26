@@ -13,12 +13,12 @@ import { styled } from "@mui/material/styles";
 import Navbar from "./Navbar";
 
 const IconContainer = styled("div")({
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
+  // display: "flex",
+  // flexDirection: "row",
+  // alignItems: "center",
 
-  textDecoration: "none",
-  color: "black",
+  // textDecoration: "none",
+  color: "grey",
   "&:hover": {
     color: "blue",
   },
@@ -26,29 +26,29 @@ const IconContainer = styled("div")({
 
 const Sidebar = () => {
   return (
-    <aside className="flex justify-center bg-gray-100 w-40 p-4">
+    <aside className="flex justify-center bg-gray-100 w-60 p-4">
       <div className="flex flex-col items-center space-y-12">
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link to="/home" style={{ textDecoration: "none" }}>
           <Navbar />
         </Link>
         <Tooltip title="Home" placement="bottom">
-          <Link to="/" style={{ textDecoration: "none" }}>
+          <Link to="/home" style={{ textDecoration: "none" }}>
             <IconContainer>
-              <FaHome size={24} />
+              <FaHome size={28} />
             </IconContainer>
           </Link>
         </Tooltip>
         <Tooltip title="Notifications" placement="bottom">
           <Link to="/notifications" style={{ textDecoration: "none" }}>
             <IconContainer>
-              <FaBell size={24} />
+              <FaBell size={28} />
             </IconContainer>
           </Link>
         </Tooltip>
         <Tooltip title="Search" placement="bottom">
           <Link to="/search" style={{ textDecoration: "none" }}>
             <IconContainer>
-              <FaSearch size={24} />
+              <FaSearch size={28} />
             </IconContainer>
           </Link>
         </Tooltip>
@@ -56,21 +56,21 @@ const Sidebar = () => {
         <Tooltip title="Messages" placement="bottom">
           <Link to="/messages" style={{ textDecoration: "none" }}>
             <IconContainer>
-              <FaEnvelope size={24} />
+              <FaEnvelope size={28} />
             </IconContainer>
           </Link>
         </Tooltip>
         <Tooltip title="Post" placement="bottom">
           <Link to="/create-spire" style={{ textDecoration: "none" }}>
             <IconContainer>
-              <FaPlusCircle size={24} />
+              <FaPlusCircle size={28} />
             </IconContainer>
           </Link>
         </Tooltip>
         <Tooltip title="Profile" placement="bottom">
           <Link to="/profile" style={{ textDecoration: "none" }}>
             <IconContainer>
-              <FaUser size={34} />
+              <FaUser size={28} />
             </IconContainer>
           </Link>
         </Tooltip>

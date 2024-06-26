@@ -1,2 +1,2 @@
-export const FETCH_TWEETS = "FETCH_TWEETS";
-export const CREATE_TWEET = "CREATE_TWEET";
+export const FETCH_SPIRES = "FETCH_SPIRES";
+export const CREATE_SPIRE = "CREATE_SPIRE";

@@ -11,5 +11,5 @@ export default defineConfig({
       external: [],
     },
   },
-  base: "/client/",
+  // base: "/client/",
 });
